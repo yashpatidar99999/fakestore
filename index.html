@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Products container div-->
+    <!--Append options via js -->
+    <div class="nav">
+      <select name="category" id="category" onchange="categoryHandler()">
+        <option value="all">all</option>
+      </select>
+      <select name="sort_by_price" id="sort_by_price" onchange="sortHandler()">
+        <option value="">sort_by_price</option>
+        <option value="true">Acending</option>
+        <option value="false">Descending</option>
+      </select>
+
+      <input
+        type="text"
+        name="search"
+        id="search"
+        placeholder="search products by title"
+      />
+    </div>
+    <!---data comes via js-->
+
+    <div id="products_container"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
